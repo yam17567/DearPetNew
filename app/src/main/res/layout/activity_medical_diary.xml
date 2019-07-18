@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/medical"
+    tools:context=".MedicalDiaryActivity">
+
+
+    <TextView
+        android:id="@+id/headLine"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcom to your medical diary!"
+        android:textSize="44dp"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000"/>
+
+    <Button
+        android:id="@+id/ShowMa"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="250dp"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="Click here to see all taken animalMedications" />
+
+    <Button
+        android:id="@+id/AddMads1"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ShowMa"
+        android:textSize="20sp"
+        android:text="CLICK HERE TO ADD MADS" />
+
+    <EditText
+        android:id="@+id/editTextMads"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:hint="write here the new mad name"
+        android:layout_below="@+id/AddMads1"
+        android:ems="13"
+        android:inputType="textPersonName" />
+
+</RelativeLayout>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/rabbit3"
+    tools:context=".RabbitActivity">
+
+
+    <EditText
+        android:id="@+id/NumOfDayCleaningR"
+        android:layout_width="165dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/qus11"
+        android:hint="enter here"
+        android:inputType="number"
+        android:textColor="#D1070707"
+        android:textSize="23dp"
+        />
+
+    <TextView
+        android:id="@+id/qus11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="230dp"
+        android:text="how many times a day you clean the cage?"
+        android:textSize="23dp" />
+
+    <EditText
+        android:id="@+id/eatsInAday"
+        android:layout_width="254dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/qus222"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:textSize="23dp"
+        android:hint="enter here"
+        android:inputType="number"
+        android:textColor="#031379" />
+
+    <Button
+        android:id="@+id/ContinueB"
+        android:layout_below="@+id/eatsInAday"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="80dp"
+        android:layout_height="wrap_content"
+        android:text="press here to continue" />
+
+    <TextView
+        android:id="@+id/qus222"
+        android:layout_alignParentLeft="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NumOfDayCleaningR"
+        android:textSize="22dp"
+        android:text="how many times eats in a day?" />
+</RelativeLayout>

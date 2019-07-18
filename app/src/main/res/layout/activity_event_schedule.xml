@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EventSchedule">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="380dp"
+        android:layout_height="327dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp" />
+
+    <TextView
+        android:id="@+id/Title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Events schedule"
+        android:layout_centerHorizontal="true"
+        android:textSize="44dp"
+        android:layout_marginTop="100dp"
+        />
+
+    <Button
+        android:id="@+id/toAddSomething"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="Edit this day" />
+
+    <EditText
+        android:id="@+id/theAddText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_centerHorizontal="true"
+        android:ems="15"
+        android:hint="write what u want to add and than press on the button above"
+        android:layout_below="@+id/toAddSomething"
+        />
+</RelativeLayout>

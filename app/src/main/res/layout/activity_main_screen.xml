@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@mipmap/mainn"
+    tools:context=".UserActivity"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+
+    <TextView
+        android:id="@+id/MassageOfHi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="60sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:text="Hello again!"  />
+
+    <ImageView
+        android:id="@+id/PetImage"
+        android:layout_width="126dp"
+        android:layout_height="111dp"
+        android:layout_alignParentLeft="true"
+        android:saveEnabled="true"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/ic_pets"
+
+         />
+
+
+    <TextView
+        android:id="@+id/PetName"
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/MassageOfHi"
+        android:layout_marginTop="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:text="PetName" />
+
+
+    <TextView
+        android:id="@+id/PetGender"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/PetName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="PetGender" />
+
+
+    <TextView
+        android:id="@+id/PetBirthday"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/PetGender"
+        android:layout_width="wrap_content"
+        android:textSize="20sp"
+        android:layout_height="wrap_content"
+        android:text="PetBirthday" />
+
+
+    <Button
+        android:id="@+id/UploadFirstImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/PetImage"
+        android:text="Upload a photo" />
+
+
+
+    <Button
+        android:id="@+id/GotFood"
+        android:layout_width="117dp"
+        android:layout_height="90dp"
+        android:layout_below="@+id/UploadFirstImage"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="91dp"
+        android:text="click if he
+        got another
+         meal" />
+
+
+    <Button
+        android:id="@+id/PassToMenu"
+        android:layout_width="62dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_menu_black_24dp"
+        android:clickable="true" />
+
+    <TextView
+        android:id="@+id/raceT"
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/PetName"
+        android:layout_marginLeft="60dp"
+        android:textSize="20sp"
+        android:layout_below="@+id/PetName"
+        android:layout_height="wrap_content"
+        android:text="TextView" />
+
+
+
+    <TextView
+        android:id="@+id/Shower"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/UploadFirstImage"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="100dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/GotFood"
+        android:text="TextView" />
+
+    <TextView
+        android:id="@+id/hairCut"
+        android:layout_below="@+id/Shower"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="90dp"
+        android:layout_toRightOf="@+id/GotFood"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="TextView" />
+
+
+    <TextView
+        android:id="@+id/battery"
+        android:layout_width="wrap_content"
+        android:layout_below="@+id/GotFood"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+        android:textSize="18sp"
+        android:layout_height="wrap_content"
+        android:text="d" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:textColor="#000"
+
+        android:layout_height="wrap_content"
+        android:text="yam" />
+
+
+</RelativeLayout>

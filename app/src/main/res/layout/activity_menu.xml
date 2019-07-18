@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuActivity"
+    tools:showIn=".MainScreen"
+    tools:openDrawer="start">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/ic_icon"
+        />
+
+    <Button
+        android:id="@+id/SettingBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/ic_setting"
+        android:backgroundTint="#FCFAFA"
+        android:drawableLeft="@drawable/ic_setting"
+        android:text="   setting"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/GalleryBtn"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SettingBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_gallery"
+        android:backgroundTint="#FCFAFA"
+        android:drawableLeft="@drawable/ic_gallery"
+        android:text="   Gallery"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/EventsScheduleBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/GalleryBtn"
+        android:layout_marginTop="40dp"
+        android:clickable="true"
+        android:background="@drawable/ic_schedule"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="#FCFAFA"
+        android:drawableLeft="@drawable/ic_schedule"
+        android:text="   Events Schedule"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/MedicalDiaryBtn"
+        android:clickable="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/EventsScheduleBtn"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/ic_medical"
+        android:layout_alignParentLeft="true"
+        android:backgroundTint="#FCFAFA"
+        android:drawableLeft="@drawable/ic_medical"
+        android:text="   Medical Diary"
+        android:textSize="30sp" />
+
+
+
+</RelativeLayout>

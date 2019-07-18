@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="fill_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/qusten"
+    tools:context=".AddUserActivity">
+
+
+    <TextView
+        android:id="@+id/SayH"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="hello new user!"
+        android:textSize="50sp" />
+
+    <TextView
+        android:id="@+id/recwast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/SayH"
+        android:layout_alignParentLeft="true"
+        android:text="Please fill in the following data:"
+        android:textColor="#1652c2"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/OwnerName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recwast"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="12dp"
+        android:ems="10"
+        android:hint="choose a user name"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/passw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/OwnerName"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="choose your password"
+        android:inputType="text"
+        />
+
+    <EditText
+        android:id="@+id/KindOfAnimal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/passw"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="what kind of animal(Type Dog/Cat/Rabbit "
+       />
+
+    <EditText
+        android:id="@+id/AnimalName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/KindOfAnimal"
+        android:layout_alignParentLeft="true"
+        android:hint="animal name"
+        />
+
+    <EditText
+        android:id="@+id/Race"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/AnimalName"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp"
+        android:hint="What her race?"
+        />
+
+
+    <TextView
+        android:id="@+id/GenderRecwast"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Race"
+        android:layout_alignParentLeft="true"
+        android:text="gender:"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#000000"
+        android:textSize="23sp" />
+
+    <RadioGroup
+        android:id="@+id/ButtonRadioGENDER"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/GenderRecwast"
+       >
+
+        <RadioButton
+            android:id="@+id/Female1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="female" />
+
+        <RadioButton
+            android:id="@+id/Male1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="male" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/ShowerDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ButtonRadioGENDER"
+        android:layout_alignParentLeft="true"
+        android:ems="10"
+        android:hint="when was the last shower?"
+        android:inputType="date"
+        />
+
+    <EditText
+        android:id="@+id/HaircutDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/ShowerDate"
+        android:ems="10"
+        android:hint="when was last haircut?"
+        android:inputType="date"
+         />
+
+    <EditText
+        android:id="@+id/medicationTaker"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HaircutDate"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:hint="enter madication (if exsizt)"
+        android:inputType="text"
+        />
+
+    <Button
+        android:id="@+id/buttonForMoreM"
+        android:layout_width="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/HaircutDate"
+        android:layout_toRightOf="@+id/medicationTaker"
+        android:text="add madications" />
+
+
+
+    <EditText
+        android:id="@+id/Birthday"
+        android:layout_width="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/medicationTaker"
+        android:ems="10"
+        android:hint="pet birthday?"
+        android:inputType="date"
+         />
+
+
+    <Button
+        android:id="@+id/buttonContinue"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Birthday"
+        android:text="Click here to continue"
+        android:textSize="19sp" />
+</RelativeLayout>
+</ScrollView>

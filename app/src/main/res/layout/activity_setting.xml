@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@mipmap/download"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".SettingsActivity">
+
+
+    <TextView
+        android:id="@+id/headLineSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Edit your setting:"
+        android:textSize="50sp"
+        android:textColor="#000"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editPass"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:ems="13"
+        android:hint="enter your new wanted password"
+        android:layout_below="@+id/headLineSetting"
+        android:layout_marginTop="140dp"
+        android:inputType="number" />
+
+
+    <TextView
+        android:id="@+id/headOfNotifications"
+        android:layout_width="wrap_content"
+        android:textSize="30sp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:text="edit progresse-bar:"
+        android:layout_below="@id/editPass"
+        android:layout_marginTop="30dp"/>
+
+    <EditText
+        android:id="@+id/showerTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/headOfNotifications"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentLeft="true"
+        android:hint="last shower=date"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/haircutTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/showerTime"
+        android:ems="10"
+        android:layout_alignParentLeft="true"
+        android:hint="last haircut=date"
+        android:inputType="date" />
+
+    <Button
+        android:id="@+id/SaveBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/haircutTime"
+        android:layout_centerHorizontal="true"
+        android:text="Save" />
+
+
+</RelativeLayout>
